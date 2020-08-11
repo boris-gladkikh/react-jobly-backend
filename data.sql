@@ -65,6 +65,7 @@ CREATE TABLE public.users (
     last_name text,
     email text,
     photo_url text,
+    bio text,
     is_admin boolean DEFAULT false NOT NULL
 );
 
