@@ -92,7 +92,7 @@ class User {
 
   static async findOne(username) {
     const userRes = await db.query(
-        `SELECT username, first_name, last_name, email, photo_url 
+        `SELECT username, first_name, last_name, email, photo_url, bio 
             FROM users 
             WHERE username = $1`,
         [username]);

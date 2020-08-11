@@ -35,7 +35,7 @@
       "type": "string",
       "title": "The Photo Schema ",
       "format": "uri",
-      "default": "",
+      "default": "https://www.pngkey.com/png/detail/230-2301779_best-classified-apps-default-user-profile.png",
       "examples": [
         "https://avatars0.githubusercontent.com/u/13444851?s=460&v=4"
       ]
@@ -55,6 +55,15 @@
       "title": "The Email Schema ",
       "default": "",
       "examples": ["michael@rithmschool.com"]
+    },
+    "bio": {
+      "$id": "/properties/bio",
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 900,
+      "title": "The Bio Schema ",
+      "default": "",
+      "examples": ["Lorem Ipsum blah blah blah. Welcome to the future of jeans."]
     },
     "_token": {
       "$id": "/properties/token",
